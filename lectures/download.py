@@ -30,7 +30,8 @@ for i in range(1, threads):
     jobs.append(thread)
     prev_step = step
     
-for j in jobs:
+for i, j in enumerate(jobs):
+    print("Running job ", i)
     j.start()
     
 for j in jobs:
