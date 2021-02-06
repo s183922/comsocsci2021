@@ -1,7 +1,10 @@
 import pandas as pd
 from threading import Thread
 import numpy as np
+from psaw import PushshiftAPI
 
+
+api = PushshiftAPI()
 df = pd.read_csv("reddit.csv")
 
 
