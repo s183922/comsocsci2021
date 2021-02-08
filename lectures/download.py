@@ -28,7 +28,7 @@ for i in range(1, threads):
     
     thread = Thread(target=download_comments(ids[steps[i-1]:steps[i]], data))
     jobs.append(thread)
-    prev_step = step
+    
     
 for i, j in enumerate(jobs):
     print("Running job ", i)
