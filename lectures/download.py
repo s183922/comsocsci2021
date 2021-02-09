@@ -3,6 +3,7 @@ from tqdm import tqdm
 from psaw import PushshiftAPI
 import pandas as pd
 from datetime import datetime
+import numpy as np
 df = pd.read_csv("reddit.csv")
 api = PushshiftAPI()
 
